@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Felix - ซื้อขายไอดี Free Fire มืออาชีพ</title>
+  <title>Felix - ร้านจำหน่ายไอดี Free Fire มืออาชีพ</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 </head>
 <body class="min-h-screen pb-12">
 
-  <!-- Header -->
+  <!-- 顶部导航栏 -->
   <header class="border-b border-slate-800 bg-slate-900/80 sticky top-0 z-40 backdrop-blur-md">
     <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center gap-2">
@@ -26,7 +26,7 @@
         </span>
       </div>
       
-      <!-- 联系按钮（替换为您自己的链接） -->
+      <!-- 联系方式按钮（把 href="..." 换成你的个人链接） -->
       <div class="flex gap-2">
         <a href="https://line.me" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-bold px-3 py-2 rounded-xl transition flex items-center gap-1">
           <i class="fa-brands fa-line text-base"></i> LINE
@@ -38,51 +38,55 @@
     </div>
   </header>
 
-  <!-- Title -->
+  <!-- 店铺标语 -->
   <section class="max-w-6xl mx-auto px-4 mt-6">
     <div class="text-center py-6 bg-gradient-to-r from-orange-500/10 via-slate-800 to-amber-500/10 rounded-2xl border border-slate-700">
       <h1 class="text-2xl font-black text-orange-400 mb-1">🔥 ร้านจำหน่ายไอดี Free Fire</h1>
-      <p class="text-slate-400 text-xs">ปลอดภัย 100% มีรายละเอียดรูปภาพไอดีและรูปอีเมลชัดเจน</p>
+      <p class="text-slate-400 text-xs">ปลอดภัย 100% มีรายละเอียดรูปภาพไอดีและรูปอีเมลผูกบัญชีชัดเจน</p>
     </div>
   </section>
 
-  <!-- 账号列表容器 -->
+  <!-- 账号展示列表区 -->
   <main class="max-w-6xl mx-auto px-4 mt-8">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      <!-- ==================== 账号 1 (复制整段可新增账号) ==================== -->
+      <!-- ==================== 账号卡片 1 开始 ==================== -->
       <div class="glass-card rounded-2xl overflow-hidden shadow-xl hover:border-orange-500/50 transition">
+        <!-- 封面主图 -->
         <div class="relative h-48 bg-slate-950">
           <span class="absolute top-2 left-2 bg-emerald-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full z-10 flex items-center gap-1">
             <i class="fa-solid fa-circle-check"></i> พร้อมขาย
           </span>
-          <span class="absolute bottom-2 right-2 bg-black/80 text-orange-400 text-xs font-black px-2.5 py-1 rounded-md">
-            ฿1,500.00 <!-- 1. 这里改价格 -->
+          <!-- 价格 -->
+          <span class="absolute bottom-2 right-2 bg-black/80 text-orange-400 text-xs font-black px-2.5 py-1 rounded-md backdrop-blur-sm">
+            ฿1,500.00
           </span>
-          <!-- 主封面图 -->
+          <!-- 封面图片地址 -->
           <img src="https://via.placeholder.com/600x350/1e293b/ffffff?text=Game+Cover+Preview" class="w-full h-full object-cover">
         </div>
 
+        <!-- 描述与操作栏 -->
         <div class="p-4 space-y-3">
           <div class="flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-200 text-sm">รหัส: #FF001</span> <!-- 2. 这里改编号 -->
+            <!-- 编号 -->
+            <span class="font-bold text-slate-200 text-sm">รหัส: #FF001</span>
             <span class="bg-slate-800 text-slate-400 text-[10px] px-2 py-0.5 rounded">FREEFIRE</span>
           </div>
 
-          <p class="text-slate-400 text-xs">ไอดีสะอาด มีภาพรายละเอียดตัวละครและรูปอีเมลผูกบัญชี</p>
+          <p class="text-slate-400 text-xs">ไอดีสะอาด มีภาพรายละเอียดตัวละครและรูปอีเมลผูกบัญชีครบถ้วน</p>
 
           <div class="flex justify-between items-center border-t border-slate-800 pt-3">
-            <div class="text-lg font-black text-orange-400">฿1,500.00</div> <!-- 3. 这里改价格 -->
+            <div class="text-lg font-black text-orange-400">฿1,500.00</div>
             
-            <!-- 点击打开多图预览按钮 -->
+            <!-- 点击触发弹窗 -->
             <button onclick="openModal('modal-1')" class="bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold px-4 py-2 rounded-xl transition flex items-center gap-1.5 shadow-lg shadow-orange-500/20">
-              <i class="fa-regular fa-images"></i> ดูรูปไอดี & อีเมล
+              <i class="fa-regular fa-images"></i> [url=https://ibb.co/YBHy8twJ][img]https://i.ibb.co/Xxc3pzM6/711290eb-d73e-4b16-a671-48fd268d6aa2.jpg[/img][/url]& อีเมล
             </button>
           </div>
         </div>
       </div>
 
-      <!-- 账号1的详情弹窗（预览游戏图 + 邮箱图） -->
+      <!-- 账号 1 的详情预览弹窗 -->
       <div id="modal-1" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-5 space-y-4">
           <div class="flex justify-between items-center border-b border-slate-800 pb-3">
@@ -90,24 +94,26 @@
             <button onclick="closeModal('modal-1')" class="text-slate-400 hover:text-white text-xl font-bold">&times;</button>
           </div>
 
+          <!-- 弹窗内部图片展示 -->
           <div class="space-y-4">
+            <!-- 1. 游戏内截图 -->
             <div>
               <h4 class="text-xs font-bold text-slate-300 mb-2 flex items-center gap-1">
                 <i class="fa-solid fa-gamepad text-orange-400"></i> รูปภาพภายในเกม (Game Screenshots)
               </h4>
-              <!-- 替换游戏截图链接 -->
-              <img src="https://via.placeholder.com/600x350/1e293b/ffffff?text=Game+Detail+Image" class="w-full rounded-xl border border-slate-800 mb-2">
+              <img src="https://via.placeholder.com/600x350/1e293b/ffffff?text=Game+Detail+Screenshot" class="w-full rounded-xl border border-slate-800">
             </div>
 
+            <!-- 2. 邮箱/绑定验证截图 -->
             <div>
               <h4 class="text-xs font-bold text-slate-300 mb-2 flex items-center gap-1">
                 <i class="fa-solid fa-envelope text-orange-400"></i> รูปภาพอีเมล / การผูกบัญชี (Email / Binding Proof)
               </h4>
-              <!-- 4. 替换你的邮箱/绑定证明截图链接 -->
               <img src="https://via.placeholder.com/600x350/0f172a/ffffff?text=Email+Binding+Screenshot" class="w-full rounded-xl border border-slate-800">
             </div>
           </div>
 
+          <!-- 底部按钮区 -->
           <div class="pt-3 border-t border-slate-800 flex justify-between items-center">
             <span class="text-xl font-black text-orange-400">ราคา ฿1,500.00</span>
             <div class="flex gap-2">
@@ -119,14 +125,19 @@
           </div>
         </div>
       </div>
-      <!-- ==================== 账号 1 结束 ==================== -->
+      <!-- ==================== 账号卡片 1 结束 ==================== -->
 
     </div>
   </main>
 
+  <!-- 弹窗逻辑脚本 -->
   <script>
-    function openModal(id) { document.getElementById(id).classList.remove('hidden'); }
-    function closeModal(id) { document.getElementById(id).classList.add('hidden'); }
+    function openModal(id) {
+      document.getElementById(id).classList.remove('hidden');
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.add('hidden');
+    }
   </script>
 
 </body>
